@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Oil & Gas Manpower - Construct Direct Co</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    .hero {
+      background-image: url('images/oilgas-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+    .hero h1 {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 1rem 2rem;
+      border-radius: 0.5rem;
+      font-size: 1.8rem;
+    }
+    .btn {
+      background-color: #1e40af;
+      color: white;
+      padding: 0.75rem 2rem;
+      border-radius: 9999px;
+      font-weight: bold;
+      margin-top: 1rem;
+      display: inline-block;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #1c3fa2;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-blue-800 p-4 text-white sticky top-0 z-50 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <img src="images/logo.png" alt="Logo" class="w-10 h-10 rounded-full object-contain">
+        <h1 class="text-xl font-bold uppercase">Construct Direct Co</h1>
+      </div>
+      <div class="hidden md:flex space-x-6">
+        <a href="index.html" class="hover:text-yellow-300">Home</a>
+        <a href="about.html" class="hover:text-yellow-300">About Us</a>
+        <a href="contact.html" class="hover:text-yellow-300">Contact Us</a>
+      </div>
+      <button class="md:hidden text-2xl" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden flex flex-col bg-blue-700 mt-2 p-4 rounded shadow-md text-center">
+      <a href="index.html" class="py-2 border-b border-blue-600">Home</a>
+      <a href="about.html" class="py-2 border-b border-blue-600">About Us</a>
+      <a href="contact.html" class="py-2">Contact Us</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div>
+      <h1>Trusted Oil & Gas Workforce for Complex Environments</h1>
+      <a href="contact.html" class="btn">Hire Now</a>
+    </div>
+  </section>
+
+  <!-- Overview Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
+      <div class="md:w-1/2">
+        <img src="images/oilgas-team.jpg" alt="Oil & Gas Manpower" class="rounded-lg shadow-lg w-full">
+      </div>
+      <div class="md:w-1/2">
+        <h2 class="text-3xl font-bold text-black mb-4">Skilled Manpower for Oil & Gas Industry</h2>
+        <p class="text-lg text-gray-700">
+          Construct Direct Co delivers reliable manpower for the oil and gas sector — from rig workers and safety supervisors to project engineers and technicians. Our talent pool is trained, experienced, and certified to meet the complex and safety-critical demands of this industry.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="py-20 bg-gray-100">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold text-black mb-12">Our Oil & Gas Manpower Range</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white rounded-lg shadow p-6">
+          <img src="images/rig-worker.jpg" alt="Rig Workers" class="w-full h-56 object-cover rounded mb-4">
+          <h3 class="text-xl font-semibold text-black mb-2">Rig & Field Workers</h3>
+          <p class="text-gray-700">Certified rig and site workers trained for remote locations and high-risk zones. Ensure safety and precision on every project.</p>
+        </div>
+        <div class="bg-white rounded-lg shadow p-6">
+          <img src="images/oilgas-supervisor.jpg" alt="Supervisors and Engineers" class="w-full h-56 object-cover rounded mb-4">
+          <h3 class="text-xl font-semibold text-black mb-2">Supervisors & Engineers</h3>
+          <p class="text-gray-700">Experienced field supervisors and engineers to oversee production, safety, and technical compliance throughout your operation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div>
+        <div class="flex items-center mb-4">
+          <img src="images/logo.png" alt="Logo" class="w-10 h-10 mr-3 object-contain rounded-full">
+          <h3 class="text-xl font-bold">Construct Direct Co</h3>
+        </div>
+        <p class="text-gray-400">Providing manpower across Saudi Arabia for oil, gas, logistics, and beyond.</p>
+      </div>
+      <div>
+        <h4 class="text-lg font-bold mb-4">Contact Us</h4>
+        <ul class="space-y-2 text-gray-400">
+          <li><i class="fas fa-map-marker-alt mr-2 text-blue-500"></i> Dammam, Saudi Arabia</li>
+          <li><i class="fas fa-phone-alt mr-2 text-blue-500"></i> 7050587422</li>
+          <li><i class="fas fa-file-invoice mr-2 text-blue-500"></i> Tax No: 313100646700003</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-gray-800 mt-10 pt-6 text-center text-gray-400">
+      <p>&copy; 2025 مؤسسة سلطان عبد الله العنزي التجارية. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    }
+  </script>
+
+</body>
+</html>

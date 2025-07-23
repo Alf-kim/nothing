@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monthly Services - Construct Direct Co</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<!-- Navbar -->
+<nav class="bg-blue-800 p-4 text-white sticky top-0 z-50 shadow-md">
+  <div class="container mx-auto flex justify-between items-center">
+    <div class="flex items-center space-x-3">
+      <img src="images/logo.png" alt="Logo" class="w-10 h-10 object-contain rounded-full">
+      <h1 class="text-xl md:text-2xl font-bold uppercase">Construct Direct Co</h1>
+    </div>
+    <div class="hidden md:flex space-x-6">
+      <a href="index.html" class="hover:text-yellow-300">Home</a>
+      <a href="about.html" class="hover:text-yellow-300">About Us</a>
+      <a href="contact.html" class="hover:text-yellow-300">Contact Us</a>
+    </div>
+    <button class="md:hidden text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+  <div id="mobile-menu" class="md:hidden hidden mt-2 bg-blue-700 p-4 rounded">
+    <a href="index.html" class="block text-white py-2 border-b border-blue-600">Home</a>
+    <a href="about.html" class="block text-white py-2 border-b border-blue-600">About Us</a>
+    <a href="contact.html" class="block text-white py-2">Contact Us</a>
+  </div>
+</nav>
+
+<!-- Hero Section (Updated Smaller Size) -->
+<section class="relative h-64 md:h-72 flex items-center justify-center text-white text-center" style="background-image: url('images/monthly-hero.jpg'); background-size: cover; background-position: center;">
+  <div class="absolute inset-0 bg-black opacity-60"></div>
+  <div class="relative z-10 px-4">
+    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3">Reliable Monthly Domestic Services for Your Home</h2>
+    <p class="text-base sm:text-lg md:text-xl max-w-2xl mx-auto mb-4">
+      Experience hassle-free monthly domestic services with Construct Direct Co. From housemaids to nannies and cleaners, we provide skilled and reliable support for your home.
+    </p>
+    <a href="contact.html" class="bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold py-2 px-6 rounded-full text-lg transition">Contact Us</a>
+  </div>
+</section>
+
+<!-- Intro Paragraph Section -->
+<section class="py-16 bg-white">
+  <div class="container mx-auto px-4 text-center">
+    <p class="text-lg md:text-xl max-w-3xl mx-auto">
+      Welcome to <strong>Construct Direct Co</strong>. We provide helpful services to make your life easier. Our Monthly services include house maids, cooks, nannies, baby sitters, home nurses, and drivers. We understand that everyone's needs are different. That's why we offer personalized services to fit your lifestyle. Our goal is to provide reliable and trustworthy services. We want to help you and your family. Learn more about our services today!
+    </p>
+  </div>
+</section>
+
+<!-- Our Monthly Service Range -->
+<section class="py-20 bg-gray-100">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-black text-center mb-12">Our Monthly Service Range</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <!-- House Maids -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="images/monthly-maid.jpg" alt="Monthly Maids" class="w-full h-60 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-black mb-2">Monthly House Maids Services</h3>
+          <p class="text-gray-700">
+            Let our professional and trained housemaids take care of your home. Our maids provide detailed and consistent cleaning, organizing, and housekeeping services to make sure that all your living spaces are always neat and comfortable. We offer flexible schedules to meet your specific needs, whether it's Monthly or daily service.
+          </p>
+        </div>
+      </div>
+
+      <!-- Drivers -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="images/monthly-driver.jpg" alt="Monthly Driver" class="w-full h-60 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-black mb-2">Monthly House Driver Services</h3>
+          <p class="text-gray-700">
+            Get a trusted driver at your doorstep. Our monthly House Driver Services provide you with a reliable and skilled driver to manage all your daily transportation needs.
+          </p>
+        </div>
+      </div>
+
+      <!-- Female Cook -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="images/monthly-cook.jpg" alt="Monthly Cook" class="w-full h-60 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-black mb-2">Female Cook Services for a Month</h3>
+          <p class="text-gray-700">
+            Enjoy the love of home-cooked meals every day as our expert female cooks prepare wide varieties of dishes customized for your dietary needs and preferences. From local traditional dishes to international cuisine, our cooks ensure your healthy meals right at your doorstep.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-12">
+  <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div>
+      <div class="flex items-center mb-4">
+        <img src="images/logo.png" alt="Logo" class="w-10 h-10 mr-3 object-contain rounded-full">
+        <h3 class="text-xl font-bold">Construct Direct Co</h3>
+      </div>
+      <p class="text-gray-400">
+        Serving manpower and industrial staffing solutions across Saudi Arabia.
+      </p>
+    </div>
+    <div>
+      <h4 class="text-lg font-bold mb-4">Contact Us</h4>
+      <ul class="space-y-2 text-gray-400">
+        <li class="flex items-center">
+          <i class="fas fa-map-marker-alt mr-3 text-blue-500"></i>
+          <span>حي الصناعية - الدمام - المملكة العربية السعودية</span>
+        </li>
+        <li class="flex items-center">
+          <i class="fas fa-phone-alt mr-3 text-blue-500"></i>
+          <span>7050587422</span>
+        </li>
+        <li class="flex items-center">
+          <i class="fas fa-file-invoice mr-3 text-blue-500"></i>
+          <span>الرقم الضريبي: 313100646700003</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-gray-800 mt-10 pt-6 text-center text-gray-400">
+    <p>&copy; 2025 مؤسسة سلطان عبد الله العنزي التجارية. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

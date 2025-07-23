@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Industrial Labour - Construct Direct Co.</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8fafc;
+      color: #1e293b;
+    }
+    .hero-bg {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/industrial.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .service-card {
+      transition: all 0.3s ease;
+      border-radius: 12px;
+      overflow: hidden;
+      height: 100%;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .btn-primary {
+      background-color: #1e3a8a;
+      color: white;
+      padding: 1rem 2.5rem;
+      border-radius: 9999px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+    .btn-primary:hover {
+      background-color: #1e40af;
+    }
+    .feature-icon {
+      width: 60px;
+      height: 60px;
+      background-color: #e0e7ff;
+      color: #1e3a8a;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="bg-blue-900 p-4 text-white sticky top-0 z-50 shadow-md">
+  <div class="container mx-auto flex justify-between items-center">
+    <div class="flex items-center space-x-3">
+      <div class="w-10 h-10">
+        <img src="images/logo.png" alt="Logo" class="w-full h-full object-contain rounded-full">
+      </div>
+      <a href="index.html" class="text-xl md:text-2xl font-bold uppercase">Construct Direct Co.</a>
+    </div>
+    <div class="hidden md:flex space-x-6">
+      <a href="index.html" class="hover:text-yellow-300">Home</a>
+      <a href="about.html" class="hover:text-yellow-300">About Us</a>
+      <a href="contact.html" class="hover:text-yellow-300">Contact Us</a>
+    </div>
+    <button class="md:hidden text-white text-2xl" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+  <div id="mobile-menu" class="md:hidden hidden flex-col space-y-4 mt-4 bg-blue-800 p-4 rounded">
+    <a href="index.html" class="block text-white hover:text-yellow-300">Home</a>
+    <a href="about.html" class="block text-white hover:text-yellow-300">About Us</a>
+    <a href="contact.html" class="block text-white hover:text-yellow-300">Contact Us</a>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-bg text-white py-24 text-center">
+  <div class="container mx-auto px-4">
+    <h1 class="text-4xl md:text-5xl font-bold mb-6">Reliable Industrial Labour Supply</h1>
+    <p class="text-xl md:text-2xl max-w-2xl mx-auto mb-8">Trained manpower for factories, warehouses, logistics & production units</p>
+    <a href="contact.html" class="btn-primary">Hire Industrial Staff</a>
+  </div>
+</section>
+
+<!-- Section 1 -->
+<section class="py-16 bg-white">
+  <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
+    <div class="md:w-1/2">
+      <img src="images/industrial.jpg" alt="Industrial Overview" class="w-full h-96 object-cover rounded-lg shadow-lg">
+    </div>
+    <div class="md:w-1/2">
+      <h2 class="text-3xl font-bold text-blue-900 mb-4">Tailored Industrial Staffing</h2>
+      <p class="mb-4 text-gray-700">From line workers to logistics personnel, Construct Direct Co. delivers experienced industrial labour for Saudi Arabia's growing industrial sector.</p>
+      <a href="contact.html" class="btn-primary mt-4 inline-block">Request Workers <i class="fas fa-arrow-right ml-2"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- Features -->
+<section class="py-16 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-blue-900">Our Industrial Expertise</h2>
+      <p class="text-gray-600 mt-2">Your reliable partner for manpower in industrial environments</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="service-card bg-white p-6 text-center">
+        <div class="feature-icon mx-auto"><i class="fas fa-industry"></i></div>
+        <h3 class="text-xl font-semibold mb-2">Factory & Line Operators</h3>
+        <p class="text-gray-600">Skilled and semi-skilled workers for production lines and machinery operations.</p>
+      </div>
+      <div class="service-card bg-white p-6 text-center">
+        <div class="feature-icon mx-auto"><i class="fas fa-truck-loading"></i></div>
+        <h3 class="text-xl font-semibold mb-2">Warehouse & Logistics</h3>
+        <p class="text-gray-600">Reliable manpower for packaging, loading, inventory, and dispatch support.</p>
+      </div>
+      <div class="service-card bg-white p-6 text-center">
+        <div class="feature-icon mx-auto"><i class="fas fa-boxes"></i></div>
+        <h3 class="text-xl font-semibold mb-2">General Industrial Workers</h3>
+        <p class="text-gray-600">Trained teams for general support roles across diverse industries and sectors.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-12">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <div class="flex items-center mb-4">
+          <div class="w-10 h-10 mr-3">
+            <img src="images/logo.png" alt="Logo" class="w-full h-full object-contain rounded-full">
+          </div>
+          <h3 class="text-xl font-bold">Construct Direct Co.</h3>
+        </div>
+        <p class="text-gray-400">Providing reliable labour solutions across Saudi Arabia since 2010.</p>
+      </div>
+      <div>
+        <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+        <ul class="space-y-2">
+          <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+          <li><a href="about.html" class="text-gray-400 hover:text-white transition">About Us</a></li>
+          <li><a href="contact.html" class="text-gray-400 hover:text-white transition">Contact Us</a></li>
+          <li><a href="construction.html" class="text-gray-400 hover:text-white transition">Construction Labour</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-lg font-bold mb-4">Contact Us</h4>
+        <ul class="space-y-2">
+          <li class="flex items-center text-gray-400">
+            <i class="fas fa-phone-alt mr-3 text-blue-400"></i>
+            <span>+966 11 123 4567</span>
+          </li>
+          <li class="flex items-center text-gray-400">
+            <i class="fas fa-envelope mr-3 text-blue-400"></i>
+            <span>info@risingstarksa.com</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-gray-800 mt-10 pt-6 text-center text-gray-400">
+      <p>&copy; 2025 Construct Direct Co. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Mobile Menu Script -->
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('mobile-menu');
+    menu.classList.toggle('hidden');
+  }
+</script>
+
+</body>
+</html>

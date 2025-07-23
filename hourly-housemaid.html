@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Hourly Housemaid Services in Saudi Arabia - Construct Direct Co">
+  <title>Hourly Housemaid Services - Construct Direct Co</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+    body {
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<!-- Navbar -->
+<nav class="bg-blue-800 p-4 text-white sticky top-0 z-50 shadow-md">
+  <div class="container mx-auto flex justify-between items-center">
+    <div class="flex items-center space-x-3">
+      <img src="images/logo.png" alt="Logo" class="w-10 h-10 object-contain rounded-full" />
+      <h1 class="text-xl md:text-2xl font-bold uppercase">Construct Direct Co</h1>
+    </div>
+    <div class="hidden md:flex space-x-6">
+      <a href="index.html" class="hover:text-yellow-300">Home</a>
+      <a href="about.html" class="hover:text-yellow-300">About Us</a>
+      <a href="contact.html" class="hover:text-yellow-300">Contact Us</a>
+    </div>
+    <button class="md:hidden text-2xl" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+  </div>
+  <div id="mobile-menu" class="md:hidden hidden flex flex-col gap-4 mt-4 bg-blue-700 p-4 rounded text-center shadow-lg">
+    <a href="index.html" class="text-white hover:text-yellow-300 block">Home</a>
+    <a href="about.html" class="text-white hover:text-yellow-300 block">About Us</a>
+    <a href="contact.html" class="text-white hover:text-yellow-300 block">Contact Us</a>
+  </div>
+</nav>
+
+<!-- Hero Section (Smaller Height) -->
+<section class="relative h-64 md:h-72 flex items-center justify-center text-white text-center" style="background-image: url('images/hourly-hero.jpg'); background-size: cover; background-position: center;">
+  <div class="absolute inset-0 bg-black opacity-60"></div>
+  <div class="relative z-10 px-4">
+    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3">Hire Hourly Housemaids in Saudi Arabia</h2>
+    <p class="text-base sm:text-lg md:text-xl max-w-2xl mx-auto mb-4">
+      Get flexible, professional housemaids on-demand. Whether it’s cleaning, cooking, laundry or more — Construct Direct Co provides trained workers when you need them.
+    </p>
+    <a href="contact.html" class="inline-block bg-yellow-500 hover:bg-yellow-600 text-blue-900 font-bold py-2 px-6 rounded-full text-lg transition transform hover:scale-105">
+      Contact Us
+    </a>
+  </div>
+</section>
+
+<!-- Introduction -->
+<section class="py-16 bg-gray-100">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-black text-center mb-6">Flexible Hourly Housemaid Services</h2>
+    <p class="text-gray-700 max-w-4xl mx-auto text-lg text-center">
+      Welcome to Construct Direct Co, your reliable source for hourly domestic help. We understand the need for flexibility in today’s busy life. Our hourly housemaid services allow you to hire skilled workers for tasks like cleaning, organizing, cooking, laundry, and more — only when you need them. Whether it’s once a day or a few times a week, we provide you with efficient, trained professionals at your convenience.
+    </p>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section class="py-16 bg-white">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-black text-center mb-12">Our Hourly Housemaid Solutions</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <!-- Box 1 -->
+      <div class="bg-gray-50 border rounded-lg shadow hover:shadow-lg transition p-6 text-center">
+        <img src="images/hourly-cleaning.jpg" alt="Cleaning and Organizing" class="w-full h-48 object-cover rounded mb-4" />
+        <h3 class="text-xl font-semibold text-black mb-2">Cleaning and Organizing</h3>
+        <p class="text-gray-700">Keep your home spotless with our expert cleaning maids. From dusting to mopping, get it done right — without committing to a full-time hire.</p>
+      </div>
+
+      <!-- Box 2 -->
+      <div class="bg-gray-50 border rounded-lg shadow hover:shadow-lg transition p-6 text-center">
+        <img src="images/hourly-cooking.jpg" alt="Hourly Cooking Help" class="w-full h-48 object-cover rounded mb-4" />
+        <h3 class="text-xl font-semibold text-black mb-2">Hourly Cooking Help</h3>
+        <p class="text-gray-700">Need a cook just for lunch or dinner? Our hourly cooks will prepare fresh meals, snacks, or even serve guests — as needed.</p>
+      </div>
+
+      <!-- Box 3 -->
+      <div class="bg-gray-50 border rounded-lg shadow hover:shadow-lg transition p-6 text-center">
+        <img src="images/hourly-laundry.jpg" alt="Laundry & Ironing Services" class="w-full h-48 object-cover rounded mb-4" />
+        <h3 class="text-xl font-semibold text-black mb-2">Laundry & Ironing Services</h3>
+        <p class="text-gray-700">Hire trained maids for laundry, folding, and ironing. Pay only for the time you need, no long-term contracts required.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-12">
+  <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div>
+      <div class="flex items-center mb-4">
+        <img src="images/logo.png" alt="Logo" class="w-10 h-10 mr-3 object-contain rounded-full" />
+        <h3 class="text-xl font-bold">Construct Direct Co</h3>
+      </div>
+      <p class="text-gray-400">
+        Serving manpower and industrial staffing solutions across Saudi Arabia.
+      </p>
+    </div>
+    <div>
+      <h4 class="text-lg font-bold mb-4">Contact Us</h4>
+      <ul class="space-y-2 text-gray-400">
+        <li class="flex items-center"><i class="fas fa-map-marker-alt mr-3 text-blue-500"></i><span>حي الصناعية - الدمام - المملكة العربية السعودية</span></li>
+        <li class="flex items-center"><i class="fas fa-phone-alt mr-3 text-blue-500"></i><span>7050587422</span></li>
+        <li class="flex items-center"><i class="fas fa-file-invoice mr-3 text-blue-500"></i><span>الرقم الضريبي: 313100646700003</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-gray-800 mt-10 pt-6 text-center text-gray-400">
+    <p>&copy; 2025 مؤسسة سلطان عبد الله العنزي التجارية. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('mobile-menu').classList.toggle('hidden');
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Construct Direct Co provides reliable labour, cleaning staff, and manpower solutions across Saudi Arabia.">
+  <meta name="keywords" content="Labour Solutions, Cleaning Staff, Saudi Arabia, Manpower Services, Industrial Workers">
+  <meta name="author" content="Construct Direct Co">
+  <title>Construct Direct Co - Manpower Services in Saudi Arabia</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    body {
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-blue-800 p-4 text-white sticky top-0 z-50 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <img src="images/logo.png" alt="Construct Direct Logo" class="w-10 h-10 object-contain rounded-full">
+        <h1 class="text-xl md:text-2xl font-bold uppercase">Construct Direct Co</h1>
+      </div>
+      <div class="hidden md:flex space-x-6">
+        <a href="index.html" class="hover:text-yellow-300">Home</a>
+        <a href="about.html" class="hover:text-yellow-300">About Us</a>
+        <a href="contact.html" class="hover:text-yellow-300">Contact Us</a>
+      </div>
+      <button class="md:hidden text-2xl" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden flex flex-col gap-4 mt-4 bg-blue-700 p-4 rounded text-center shadow-lg">
+      <a href="index.html" class="text-white hover:text-yellow-300 block font-medium py-2 border-b border-blue-600">Home</a>
+      <a href="about.html" class="text-white hover:text-yellow-300 block font-medium py-2 border-b border-blue-600">About Us</a>
+      <a href="contact.html" class="text-white hover:text-yellow-300 block font-medium py-2">Contact Us</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-blue-50 py-24 md:py-32 text-center" style="background-image: url('images/main.png'); background-size: cover; background-position: center;">
+    <div class="container mx-auto px-4">
+      <h1 class="text-3xl md:text-5xl font-bold mb-6 text-blue-800 max-w-4xl mx-auto bg-white bg-opacity-80 p-4 rounded">
+        Hire Trusted Manpower in Dammam
+      </h1>
+      <p class="text-lg md:text-xl text-blue-900 max-w-3xl mx-auto mb-8 bg-white bg-opacity-70 p-3 rounded">
+        Construct Direct Co provides skilled, dependable labour tailored for both households and businesses. From domestic staff like drivers and maids to specialized manpower for construction, healthcare, hospitality, logistics, and oil & gas — we’ve got your workforce covered.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="contact.html" class="bg-blue-700 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-full transition transform hover:scale-105">
+          Get a Quote
+        </a>
+        <a href="#services" class="bg-white hover:bg-gray-100 text-blue-700 font-bold py-3 px-6 rounded-full transition transform hover:scale-105">
+          Our Services
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Individual / Domestic Help Services -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold text-center text-black mb-12">Individual / Domestic Help Services</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <a href="monthly.html" class="block bg-gray-100 rounded-lg shadow-md hover:shadow-lg transition overflow-hidden">
+          <img src="images/monthly.jpg" alt="Monthly Services" class="w-full h-48 object-cover">
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-semibold text-black mb-2">Monthly Services</h3>
+            <p class="text-gray-600 mb-4">Reliable, professional help every month, catered to your home. From housemaids to full-time staff, tailored to your needs.</p>
+            <span class="text-blue-600 font-semibold">Learn more →</span>
+          </div>
+        </a>
+
+        <a href="hourly-housemaid.html" class="block bg-gray-100 rounded-lg shadow-md hover:shadow-lg transition overflow-hidden">
+          <img src="images/housemaid.jpg" alt="Hourly Housemaid" class="w-full h-48 object-cover">
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-semibold text-black mb-2">Hourly Housemaid</h3>
+            <p class="text-gray-600 mb-4">Flexible and reliable hourly housemaid services for cleaning, cooking, laundry, and more.</p>
+            <span class="text-blue-600 font-semibold">Learn more →</span>
+          </div>
+        </a>
+
+        <a href="maintenance.html" class="block bg-gray-100 rounded-lg shadow-md hover:shadow-lg transition overflow-hidden">
+          <img src="images/maintenance.jpg" alt="Maintenance Services" class="w-full h-48 object-cover">
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-semibold text-black mb-2">Maintenance Services</h3>
+            <p class="text-gray-600 mb-4">Expert professionals for plumbing, electrical, and technical needs, on an hourly basis.</p>
+            <span class="text-blue-600 font-semibold">Learn more →</span>
+          </div>
+        </a>
+
+        <a href="mediation.html" class="block bg-gray-100 rounded-lg shadow-md hover:shadow-lg transition overflow-hidden">
+          <img src="images/mediation.jpg" alt="Mediation Services" class="w-full h-48 object-cover">
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-semibold text-black mb-2">Mediation Services</h3>
+            <p class="text-gray-600 mb-4">End-to-end recruitment through Musaned—candidate selection, visas, contracts and more.</p>
+            <span class="text-blue-600 font-semibold">Learn more →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Corporate Sector Services -->
+  <section class="py-20 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold text-center text-black mb-12">Corporate Sector Services</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <a href="construction.html" class="block bg-white rounded-lg shadow-md hover:shadow-lg transition overflow-hidden">
+          <img src="images/construction-box.jpg" alt="Construction Sector" class="w-full h-48 object-cover">
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-semibold text-black mb-2">Construction</h3>
+            <p class="text-gray-600 mb-4">Skilled labor to engineers—aligned with your construction project needs.</p>
+            <span class="text-blue-600 font-semibold">Learn more →</span>
+          </div>
+        </a>
+
+        <a href="healthcare.html" class="block bg-white rounded-lg shadow-md hover:shadow-lg transition overflow-hidden">
+          <img src="images/healthcare-box.jpg" alt="Healthcare Sector" class="w-full h-48 object-cover">
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-semibold text-black mb-2">Healthcare</h3>
+            <p class="text-gray-600 mb-4">Top-tier medical staff—nurses, attendants, and clinical support professionals.</p>
+            <span class="text-blue-600 font-semibold">Learn more →</span>
+          </div>
+        </a>
+
+        <a href="hospitality.html" class="block bg-white rounded-lg shadow-md hover:shadow-lg transition overflow-hidden">
+          <img src="images/hospitality-box.jpg" alt="Hospitality Sector" class="w-full h-48 object-cover">
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-semibold text-black mb-2">Hospitality</h3>
+            <p class="text-gray-600 mb-4">From housekeeping to chefs—our staff ensures your guests enjoy exceptional service.</p>
+            <span class="text-blue-600 font-semibold">Learn more →</span>
+          </div>
+        </a>
+
+        <a href="logistics.html" class="block bg-white rounded-lg shadow-md hover:shadow-lg transition overflow-hidden">
+          <img src="images/logistics-box.jpg" alt="Logistics Sector" class="w-full h-48 object-cover">
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-semibold text-black mb-2">Logistics</h3>
+            <p class="text-gray-600 mb-4">Experienced staffing for warehousing, inventory, and delivery operations.</p>
+            <span class="text-blue-600 font-semibold">Learn more →</span>
+          </div>
+        </a>
+
+        <a href="oilgas.html" class="block bg-white rounded-lg shadow-md hover:shadow-lg transition overflow-hidden">
+          <img src="images/oilgas-box.jpg" alt="Oil & Gas Sector" class="w-full h-48 object-cover">
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-semibold text-black mb-2">Oil & Gas</h3>
+            <p class="text-gray-600 mb-4">Experienced oil and gas professionals from technicians to managers.</p>
+            <span class="text-blue-600 font-semibold">Learn more →</span>
+          </div>
+        </a>
+
+        <a href="othersectors.html"block bg-white rounded-lg shadow-md hover:shadow-lg transition overflow-hidden">
+          <img src="images/others-box.jpg" alt="Other Sectors" class="w-full h-48 object-cover">
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-semibold text-black mb-2">Other Sectors</h3>
+            <p class="text-gray-600 mb-4">Custom staffing solutions for specialized business needs. Let’s discuss your requirements.</p>
+            <span class="text-blue-600 font-semibold">Learn more →</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 bg-blue-800 text-white text-center">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-4">Ready to Get Started?</h2>
+      <p class="text-xl mb-8 max-w-2xl mx-auto">Contact us today to discuss your labour needs and get a customized solution.</p>
+      <a href="contact.html" class="bg-white text-blue-700 hover:bg-gray-100 font-bold py-3 px-8 rounded-full text-lg inline-block transition transform hover:scale-105">
+        Contact Us Now
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div>
+        <div class="flex items-center mb-4">
+          <img src="images/logo.png" alt="Logo" class="w-10 h-10 mr-3 object-contain rounded-full">
+          <h3 class="text-xl font-bold">Construct Direct Co</h3>
+        </div>
+        <p class="text-gray-400">
+          Serving manpower and industrial staffing solutions across Saudi Arabia.
+        </p>
+      </div>
+      <div>
+        <h4 class="text-lg font-bold mb-4">Contact Us</h4>
+        <ul class="space-y-2 text-gray-400">
+          <li class="flex items-center">
+            <i class="fas fa-map-marker-alt mr-3 text-blue-500"></i>
+            <span>حي الصناعية - الدمام - المملكة العربية السعودية</span>
+          </li>
+          <li class="flex items-center">
+            <i class="fas fa-phone-alt mr-3 text-blue-500"></i>
+            <span>7050587422</span>
+          </li>
+          <li class="flex items-center">
+            <i class="fas fa-file-invoice mr-3 text-blue-500"></i>
+            <span>الرقم الضريبي: 313100646700003</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-gray-800 mt-10 pt-6 text-center text-gray-400">
+      <p>&copy; 2025 مؤسسة سلطان عبد الله العنزي التجارية. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+  </script>
+
+</body>
+</html>

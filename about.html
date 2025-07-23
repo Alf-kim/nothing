@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Construct Direct Co - About Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    .hero-about {
+      background-image: url('images/banner.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 50vh;
+    }
+    @media (min-width: 768px) {
+      .hero-about { min-height: 60vh; }
+    }
+    .leader-card {
+      width: 100%;
+      max-width: 280px;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-blue-800 p-4 text-white sticky top-0 z-50 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <img src="images/logo.png" alt="Logo" class="w-10 h-10 object-contain rounded-full">
+        <h1 class="text-xl md:text-2xl font-bold uppercase">Construct Direct Co</h1>
+      </div>
+      <div class="hidden md:flex space-x-6">
+        <a href="index.html" class="hover:text-yellow-300">Home</a>
+        <a href="about.html" class="hover:text-yellow-300 font-semibold">About Us</a>
+        <a href="contact.html" class="hover:text-yellow-300">Contact</a>
+      </div>
+      <button class="md:hidden text-2xl" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden flex flex-col gap-4 mt-4 bg-blue-700 p-4 rounded text-center shadow-lg">
+      <a href="index.html" class="text-white hover:text-yellow-300 block font-medium py-2 border-b border-blue-600">Home</a>
+      <a href="about.html" class="text-white hover:text-yellow-300 block font-medium py-2 border-b border-blue-600">About Us</a>
+      <a href="contact.html" class="text-white hover:text-yellow-300 block font-medium py-2">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-about relative text-white flex items-center justify-center">
+    <div class="bg-black bg-opacity-50 w-full h-full absolute"></div>
+    <div class="relative z-10 text-center px-4 py-12 sm:py-20">
+      <h1 class="text-2xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 animate__animated animate__fadeInDown">Built on Trust</h1>
+      <p class="text-base sm:text-lg md:text-xl max-w-2xl mx-auto animate__animated animate__fadeInUp animate__delay-1s">
+        Delivering reliable labor solutions with unmatched professionalism and dedication.
+      </p>
+    </div>
+  </section>
+
+  <!-- About Content -->
+  <section class="py-10 sm:py-16 px-4 sm:px-6">
+    <div class="container mx-auto">
+
+      <!-- Who We Are -->
+      <div class="max-w-4xl mx-auto text-center mb-10 sm:mb-16">
+        <h2 class="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6">Who We Are</h2>
+        <p class="text-gray-700 text-sm sm:text-base leading-relaxed">
+          Construct Direct Co is a trusted manpower and workforce solution provider in Saudi Arabia. With a foundation rooted in integrity and client commitment, we specialize in sourcing, deploying, and managing skilled and semi-skilled workers across multiple sectors. From construction to cleaning, logistics to hospitality, our mission is to deliver manpower that not only meets your expectations but exceeds industry standards. Our strength lies in understanding client needs, maintaining transparency, and executing workforce plans with efficiency and professionalism. Every member of our team is trained, vetted, and guided by a deep commitment to serve both companies and communities.
+        </p>
+      </div>
+
+      <!-- Our Promise -->
+      <div class="bg-blue-50 rounded-xl p-8 mb-10 sm:mb-16">
+        <h2 class="text-2xl md:text-3xl font-bold text-center mb-8">Our Promise</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="text-xl font-semibold mb-4 text-blue-800">Quality Assurance</h3>
+            <ul class="space-y-3 text-sm">
+              <li class="flex items-start"><span class="text-blue-600 mr-2">✓</span> Every worker is interviewed and skills-tested</li>
+              <li class="flex items-start"><span class="text-blue-600 mr-2">✓</span> Regular on-site performance checks</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-4 text-blue-800">Client Focus</h3>
+            <ul class="space-y-3 text-sm">
+              <li class="flex items-start"><span class="text-blue-600 mr-2">✓</span> 24/7 availability for urgent requests</li>
+              <li class="flex items-start"><span class="text-blue-600 mr-2">✓</span> Flexible short-term and long-term staffing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Founder -->
+      <div class="text-center">
+        <h2 class="text-2xl md:text-3xl font-bold mb-6">Our Founder</h2>
+        <div class="flex justify-center">
+          <div class="leader-card bg-white p-6 rounded-lg shadow hover:shadow-md transition">
+            <div class="w-24 h-24 sm:w-32 sm:h-32 mx-auto mb-4 rounded-full overflow-hidden bg-gray-200">
+              <img src="images/ceo.png" alt="Ibrahim" class="w-full h-full object-cover">
+            </div>
+            <h3 class="text-xl font-semibold">Razaq</h3>
+            <p class="text-blue-700 text-sm mb-3">Founder & Director</p>
+            <p class="text-gray-600 text-sm">Hands-on leader ensuring every client receives personalized service and quality labor.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center p-6">
+    <div class="container mx-auto">
+      <p class="mb-4 text-sm sm:text-base">&copy; 2025 مؤسسة سلطان عبد الله العنزي التجارية. All rights reserved.</p>
+      <div class="flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-6 text-sm">
+        <a href="#" class="hover:text-yellow-300">Privacy</a>
+        <a href="#" class="hover:text-yellow-300">Terms</a>
+        <a href="contact.html" class="hover:text-yellow-300">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+  </script>
+</body>
+</html>

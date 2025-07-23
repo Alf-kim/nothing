@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maintenance Services - Construct Direct Co</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .hero-bg {
+      background-image: url('images/maintenance-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-blue-800 p-4 text-white sticky top-0 z-50 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <img src="images/logo.png" alt="Logo" class="w-10 h-10 object-contain rounded-full">
+        <h1 class="text-xl md:text-2xl font-bold uppercase">Construct Direct Co</h1>
+      </div>
+      <div class="hidden md:flex space-x-6">
+        <a href="index.html" class="hover:text-yellow-300">Home</a>
+        <a href="about.html" class="hover:text-yellow-300">About Us</a>
+        <a href="contact.html" class="hover:text-yellow-300">Contact Us</a>
+      </div>
+      <button class="md:hidden text-2xl" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden flex flex-col gap-4 mt-4 bg-blue-700 p-4 rounded text-center shadow-lg">
+      <a href="index.html" class="text-white hover:text-yellow-300 block">Home</a>
+      <a href="about.html" class="text-white hover:text-yellow-300 block">About Us</a>
+      <a href="contact.html" class="text-white hover:text-yellow-300 block">Contact Us</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-bg text-white py-20">
+    <div class="container mx-auto text-center px-4">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4 bg-white bg-opacity-80 text-blue-900 inline-block p-3 rounded">
+        On-Demand Maintenance Services for Urgent Needs
+      </h2>
+      <p class="text-lg bg-white bg-opacity-70 text-blue-800 inline-block px-4 py-2 rounded">
+        Skilled plumbers and electricians ready to assist—anytime, anywhere.
+      </p>
+      <div class="mt-6">
+        <a href="contact.html" class="bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold py-3 px-6 rounded-full inline-block transition">
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Paragraph Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4 max-w-4xl text-center">
+      <p class="text-lg text-gray-700 leading-relaxed">
+        At <strong>Construct Direct Co</strong>, we recognize the fact that sometimes certain jobs can only be undertaken immediately or best done on demand.
+        For these reasons, we have Maintenance Services, whereby you get help for urgent and occasional needs.
+        Our experienced workers are available to help you complete various services with your desired flexibility so that you end up with good quality.
+        We are here to take care of everything, whether you need something small, like something repaired quickly or a more technical job.
+      </p>
+    </div>
+  </section>
+
+  <!-- Service Range Section -->
+  <section class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold text-black mb-10 text-center">Our Maintenance Service Range</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        <!-- Plumber Services -->
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+          <img src="images/plumber.jpg" alt="Plumber Services" class="w-full h-56 object-cover rounded mb-4">
+          <h3 class="text-xl font-bold text-black mb-2">Plumber Services</h3>
+          <p class="text-gray-600">
+            Get fast and reliable plumbing solutions for all your needs, from leaks to installations, with our expert team available for immediate service.
+          </p>
+        </div>
+
+        <!-- Electrician Services -->
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+          <img src="images/electrician.jpg" alt="Electrician Services" class="w-full h-56 object-cover rounded mb-4">
+          <h3 class="text-xl font-bold text-black mb-2">Electrician Services</h3>
+          <p class="text-gray-600">
+            Our experienced electricians ensure safety and efficiency for all your electrical needs, from repairs to full installations.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div>
+        <div class="flex items-center mb-4">
+          <img src="images/logo.png" alt="Logo" class="w-10 h-10 mr-3 object-contain rounded-full">
+          <h3 class="text-xl font-bold">Construct Direct Co</h3>
+        </div>
+        <p class="text-gray-400">
+          Trusted manpower and domestic services across Saudi Arabia.
+        </p>
+      </div>
+      <div>
+        <h4 class="text-lg font-bold mb-4">Contact Us</h4>
+        <ul class="space-y-2 text-gray-400">
+          <li class="flex items-center">
+            <i class="fas fa-map-marker-alt mr-3 text-yellow-500"></i>
+            <span>حي الصناعية - الدمام - المملكة العربية السعودية</span>
+          </li>
+          <li class="flex items-center">
+            <i class="fas fa-phone-alt mr-3 text-yellow-500"></i>
+            <span>7050587422</span>
+          </li>
+          <li class="flex items-center">
+            <i class="fas fa-envelope mr-3 text-yellow-500"></i>
+            <span>info@constructdirect.com</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-gray-800 mt-10 pt-6 text-center text-gray-400">
+      <p>&copy; 2025 Construct Direct Co. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    }
+  </script>
+</body>
+</html>

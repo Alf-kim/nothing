@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mediation Services | Construct Direct Co</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+    .bg-hero {
+      background-image: url('images/mediation-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-blue-800 p-4 text-white sticky top-0 z-50 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <img src="images/logo.png" alt="Construct Direct Logo" class="w-10 h-10 object-contain rounded-full">
+        <h1 class="text-xl md:text-2xl font-bold uppercase">Construct Direct Co</h1>
+      </div>
+      <div class="hidden md:flex space-x-6">
+        <a href="index.html" class="hover:text-yellow-300">Home</a>
+        <a href="about.html" class="hover:text-yellow-300">About Us</a>
+        <a href="contact.html" class="hover:text-yellow-300">Contact Us</a>
+      </div>
+      <button class="md:hidden text-2xl" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden flex flex-col gap-4 mt-4 bg-blue-700 p-4 rounded text-center shadow-lg">
+      <a href="index.html" class="text-white hover:text-yellow-300 border-b border-blue-600 py-2">Home</a>
+      <a href="about.html" class="text-white hover:text-yellow-300 border-b border-blue-600 py-2">About Us</a>
+      <a href="contact.html" class="text-white hover:text-yellow-300 py-2">Contact Us</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-hero py-24 text-white text-center relative">
+    <div class="bg-black bg-opacity-50 absolute inset-0 z-0"></div>
+    <div class="relative z-10 container mx-auto px-4">
+      <h1 class="text-3xl md:text-5xl font-bold mb-4">Effortless Hiring with Our Mediation Services</h1>
+      <p class="text-lg md:text-xl max-w-2xl mx-auto mb-6">
+        Experience seamless hiring with our Mediation Services. We handle everything from recruitment to contracts, ensuring a smooth process. Let us help you find the best candidates with minimal effort and maximum efficiency.
+      </p>
+      <a href="contact.html" class="inline-block bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold py-3 px-8 rounded-full transition duration-300">Act Now</a>
+    </div>
+  </section>
+
+  <!-- Paragraph Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-black mb-6">Mediation Services</h2>
+      <p class="text-gray-700 text-lg leading-relaxed">
+        At Construct Direct Co, we offer streamlined mediation services to simplify the recruitment process for individuals and corporate sectors where you need skilled workers for businesses.
+        This service allows us to handle all aspects of recruitment on behalf of our clients, ensuring a hassle-free experience from start to finish.
+        <br><br>
+        Our integrated recruitment services leverage the Musaned platform, a government-authorized system that connects employers with reliable manpower solutions.
+        We take care of every step, from selecting qualified candidates to managing the necessary legal and administrative procedures, ensuring compliance with Saudi regulations.
+      </p>
+    </div>
+  </section>
+
+  <!-- Mediation Service Range -->
+  <section class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-black text-center mb-12">Our Mediation Service Range</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="images/mediation-housemaid.jpg" alt="Housemaid Mediation" class="w-full h-64 object-cover">
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold text-black mb-3">Housemaid Mediation Service</h3>
+            <p class="text-gray-700">
+              Make hiring easy with our expert mediation service, which helps you to have a smooth match with the most skilled housemaids for efficient and reliable domestic support.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="images/mediation-driver.jpg" alt="Driver Mediation" class="w-full h-64 object-cover">
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold text-black mb-3">House Driver Mediation Service</h3>
+            <p class="text-gray-700">
+              Finding the right house driver who is licensed is quite easy with our mediation services.
+              Our mediation services offer you safe and professional transportation solutions customized according to your needs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div>
+        <div class="flex items-center mb-4">
+          <img src="images/logo.png" alt="Logo" class="w-10 h-10 mr-3 object-contain rounded-full">
+          <h3 class="text-xl font-bold">Construct Direct Co</h3>
+        </div>
+        <p class="text-gray-400">
+          Serving manpower and industrial staffing solutions across Saudi Arabia.
+        </p>
+      </div>
+      <div>
+        <h4 class="text-lg font-bold mb-4">Contact Us</h4>
+        <ul class="space-y-2 text-gray-400">
+          <li class="flex items-center"><i class="fas fa-map-marker-alt mr-3 text-blue-500"></i>حي الصناعية - الدمام - المملكة العربية السعودية</li>
+          <li class="flex items-center"><i class="fas fa-phone-alt mr-3 text-blue-500"></i>7050587422</li>
+          <li class="flex items-center"><i class="fas fa-file-invoice mr-3 text-blue-500"></i>الرقم الضريبي: 313100646700003</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-gray-800 mt-10 pt-6 text-center text-gray-400">
+      <p>&copy; 2025 مؤسسة سلطان عبد الله العنزي التجارية. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Toggle Script -->
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+  </script>
+
+</body>
+</html>
